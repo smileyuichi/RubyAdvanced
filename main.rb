@@ -1,20 +1,13 @@
-class Brave
-    attr_reader :hp, :offence , :defence
-    def initialize(hp: ,offence: ,defence:)
-        @hp = hp
-        @offence = offence
-        @defence = defence
-    end
-end
-class Monster
-    attr_reader :hp, :offence , :defence
-    def initialize(hp,offence,defence)
-        @hp = hp
-        @offence = offence
-        @defence = defence
-    end
-end
+require "./brave.rb"
+require "./monster.rb"
 
-# brave = Brave.new(hp:500, offence:150, defence:100)
-# monster = Monster.new(hp:500, offence:100, defence:100)
+brave = Brave.new(hp:500, offense:150, defense:100)
+monster = Monster.new(hp:300, offense:200, defense:300)
+
+puts brave.hp
+puts brave.offense
+puts brave.defense
+puts monster.hp
+puts monster.offense
+puts monster.defense
 
